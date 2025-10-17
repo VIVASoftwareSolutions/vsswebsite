@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>VSS</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/viva.png" rel="icon">
+    <link href="assets/img/viva.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="assets/css/googlefont.css" rel="stylesheet">
+
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/comm_mnt.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Start Header -->
+    <header id="header" class="fixed-top " style="background: rgba(0, 0, 0, 0.8);">
+        <div class="container d-flex align-items-center justify-content-lg-between">
+            <a class="navbar-brand logo me-auto me-lg-0" href="index.html" data-toggle="tooltip" data-placement="top"
+               title="VIVA SOFTWARE SOLUTIONS">
+                <h4 class="animateABHINAYtext">VSS</h4>
+            </a>
+            <div id="navbar"></div>
+            <div></div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <section>
+        <div class="head">
+            <!--<h2>A visual reflection of the committee’s initiatives, achievements, and memorable events.</h2>
+            <h2>Behind the Scenes of Our Committee’s Journey</h2>-->
+            <h2>A glimpse into our committee’s key moments.</h2>
+
+            <div class="controls">
+                <button id="prev" class="nav-btn" aria-label="Prev">‹</button>
+                <button id="next" class="nav-btn" aria-label="Next">›</button>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="track" id="track">
+
+                <article class="project-card">
+                    <img class="project-card__bg" src="assets/img/Events/AppToProcess(IPG)/WhatsApp Image 2025-10-14 at 2.57.07 PM.jpeg" alt="">
+                    <div class="project-card__content">
+                        <img class="project-card__thumb" src="assets/img/Events/AppToProcess(IPG)/WhatsApp Image 2025-10-14 at 2.56.59 PM.jpeg" alt="">
+                        <div>
+                            <h3 class="project-card__title">IPG Process</h3>
+                            <p class="project-card__desc">From concept to cut, faster.</p>
+                            <button class="project-card__btn" data-folder="assets/img/Events/AppToProcess(IPG)/" data-bs-toggle="modal" data-bs-target="#imageGalleryModal">Details</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img class="project-card__bg" src="assets/img/Events/ArtsOfReading/WhatsApp Image 2025-10-06 at 1.29.12 PM (1).jpeg" alt="">
+                    <div class="project-card__content">
+                        <img class="project-card__thumb" src="assets/img/Events/ArtsOfReading/WhatsApp Image 2025-10-06 at 1.29.10 PM (1).jpeg" alt="">
+                        <div>
+                            <h3 class="project-card__title">Arts Of Reading</h3>
+                            <p class="project-card__desc">Create faster, explore new possibilities.</p>
+                            <button class="project-card__btn" data-folder="assets/img/Events/ArtsOfReading/" data-bs-toggle="modal" data-bs-target="#imageGalleryModal">Details</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" active>
+                    <img class="project-card__bg" src="assets/img/Events/VidyaSphereDemons/2 WhatsApp Image 2025-10-07 at 10.34.18 AM.jpeg" alt="">
+                    <div class="project-card__content">
+                        <img class="project-card__thumb" src="assets/img/Events/VidyaSphereDemons/WhatsApp Image 2025-10-07 at 10.34.15 AM.jpeg" alt="">
+                        <div>
+                            <h3 class="project-card__title">VidyaSphere Demonstration</h3>
+                            <p class="project-card__desc">Tools that work like you do.</p>
+                            <button class="project-card__btn" data-folder="assets/img/Events/VidyaSphereDemons/" data-bs-toggle="modal" data-bs-target="#imageGalleryModal">Details</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="imageGalleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <!--<div class="modal-header">
+                        <h5 class="modal-title" id="galleryModalLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>-->
+                    <div class="modal-body p-0">
+
+                        <div id="projectCarousel" class="carousel slide" data-bs-ride="false">
+                            <div class="carousel-inner" id="carouselInner">
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="magnifyModal" tabindex="-1" aria-labelledby="magnifyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center p-0">
+                        <img id="magnifiedImage" src="" alt="Magnified Project Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="dots" id="dots"></div>
+    </section>
+
+
+    <div id="divfooter"></div>
+
+    <!--<div id="preloader"></div>-->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ab js  -->
+    <script src="assets/jquery/jquery.js"></script>
+
+    <script src="assets/js/comm_moment.js"></script>
+
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('divfooter').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+</body>
+</html>
