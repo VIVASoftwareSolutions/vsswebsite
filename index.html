@@ -91,6 +91,7 @@
                 opacity: 1;
             }
 
+
     </style>
 
 </head>
@@ -856,7 +857,34 @@
     </script>-->
     <script>
         $(function () {
-            $("#navbar").load("navbar.html");
+ /*  $("#navbar").load("navbar.html");*/
+            $("#navbar-container").load("navbar.html", function () {
+
+                const navbar = document.getElementById('navbar');
+                const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+
+                // Mobile menu toggle
+                if (mobileNavToggle) {
+                    mobileNavToggle.addEventListener('click', function () {
+                        navbar.classList.toggle('navbar-mobile');
+                        this.classList.toggle('bi-list');
+                        this.classList.toggle('bi-x');
+                    });
+                }
+
+                // Mobile dropdowns
+                const dropdowns = navbar.querySelectorAll('.navbar .dropdown > a');
+                dropdowns.forEach(drop => {
+                    drop.addEventListener('click', function (e) {
+                        if (navbar.classList.contains('navbar-mobile')) {
+                            e.preventDefault();
+                            this.nextElementSibling.classList.toggle('dropdown-active');
+                        }
+                    });
+                });
+
+            });
+
             $("#divfooter").load("footer.html");
         });
 
