@@ -97,12 +97,6 @@
 
 <body>
 
-    <div id="gifModal" class="modal-overlay">
-        <div class="modal-content">
-            <img src="assets/img/Wishing you all a very happy (2) (3).gif" alt="Loading..."/>
-        </div>
-    </div>
-
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top " style="background: rgba(0, 0, 0, 0.8);">
         <div class="container d-flex align-items-center justify-content-lg-between">
@@ -834,7 +828,7 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <!--<script>
+    <script>
         // Disable right-click
         document.addEventListener('contextmenu', (e) => e.preventDefault());
 
@@ -853,7 +847,7 @@
             )
                 return false;
         };
-    </script>-->
+    </script>
     <script>
         $(function () {
             /*  $("#navbar").load("navbar.html");*/
@@ -883,6 +877,7 @@
                 });
 
             });
+
 
             $("#divfooter").load("footer.html");
         });
@@ -942,45 +937,6 @@
 
     </script>
 
-
-    <!--<script>
-        window.addEventListener("load", function () {
-            const modal = document.getElementById("gifModal");
-            const content = document.getElementById("mainContent");
-
-            setTimeout(() => {
-                modal.classList.add("hide");
-                setTimeout(() => modal.remove(), 800); // remove after fade-out
-                content.style.display = "block";
-                setTimeout(() => content.classList.add("show"), 200);
-            }, 9000);
-
-        });
-    </script>-->
-
-    <script>
-        window.addEventListener("load", function () {
-            const modal = document.getElementById("gifModal");
-            const content = document.getElementById("mainContent");
-
-            const alreadyShown = sessionStorage.getItem("introShown");
-
-            if (alreadyShown) {
-                modal.style.display = "none";
-                content.style.display = "block";
-                setTimeout(() => content.classList.add("show"), 100);
-            } else {
-                setTimeout(() => {
-                    modal.classList.add("hide");
-                    setTimeout(() => modal.remove(), 800); 
-                    content.style.display = "block";
-                    setTimeout(() => content.classList.add("show"), 200);
-                }, 9000);
-
-                sessionStorage.setItem("introShown", "true");
-            }
-        });
-    </script>
 
 
 </body>
