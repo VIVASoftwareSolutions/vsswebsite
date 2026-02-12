@@ -106,6 +106,18 @@
 //Image Js for displaying in the modal
 
 const projectGalleries = {
+    'assets/img/Events/FullStackWebDev/': [
+    'IMG-20260212-WA0003.jpg',
+    'IMG-20260212-WA0005.jpg',
+    'IMG-20260212-WA0006.jpg',
+    'IMG-20260212-WA0007.jpg',
+    'IMG-20260212-WA0008.jpg',
+    'IMG-20260212-WA0009.jpg',
+    'IMG-20260212-WA0010.jpg',
+    'IMG-20260212-WA0011.jpg',
+    'IMG-20260212-WA0012.jpg',
+    'IMG-20260212-WA0013.jpg',
+    ],
         'assets/img/Events/VidyaSphereDemons/': [
     '2 WhatsApp Image 2025-10-07 at 10.34.18 AM.jpeg',
     'WhatsApp Image 2025-10-07 at 10.34.17 AM.jpeg',
@@ -253,4 +265,5 @@ const projectGalleries = {
                 bootstrap.Modal.getInstance(mainGalleryModal).show();
             }
         });
+
         });
